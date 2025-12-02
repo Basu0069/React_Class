@@ -1,0 +1,6 @@
+// how to start basically 
+// delete App.css.. delete app jsx and write rafc and then delete indexedDB.css 
+// install tailwidn through tailwidn webstie  npm install tailwindcss @tailwindcss/vite
+// now open vite .config and wrtie import her and also write plugins here too 
+// now open index. css and pasted @import "tailwindcss" 
+// now run npm run dev okay it will run the project
