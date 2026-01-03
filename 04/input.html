@@ -15,51 +15,36 @@
         <input type="text" placeholder="enter your name" class="border p-3" id="name">
         <input type="text" placeholder="enter your email" class="border p-3" id="email">
         <input type="text" placeholder="enter your number" class="border p-3" id="num">
-        <!-- <button class="border px-4 py-2 rounded-2xl" id="btn">click here to add data</button> -->
-        <button class="border px-4 py-2 rounded-2xl" onclick="{handleClick()}" id="btn">click here to add data</button>
+
+        <!-- Corrected onclick syntax -->
+        <button class="border px-4 py-2 rounded-2xl" onclick="handleClick()" id="btn">
+            click here to add data
+        </button>
     </div>
 
     <script>
-        // let data=[];
+        // You forgot this (this was the main error)
+        let data = [];
 
-        function handleClick(){
-            let newData={
-                name : document.getElementById("name").value,
-                email : document.getElementById("email").value,
-                number : document.getElementById("num").value,
-
+        function handleClick() {
+            let newData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                number: document.getElementById("num").value,
             };
 
             data.push(newData);
             console.log(data);
 
+            // Clear input fields
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("num").value = "";
-
-            
         }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// to run this take shyam as id in input in name 
+        // Extra example code (kept clean & correct)
         // let dataa = [];
         // document.getElementById('btn').addEventListener('click', () => {
         //     let shyam = document.getElementById('shyam').value;

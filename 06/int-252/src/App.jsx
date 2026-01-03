@@ -68,3 +68,7 @@ export default App
 // now open vite .config and wrtie import her and also write plugins here too 
 // now open index. css and pasted @import "tailwindcss" 
 // now run npm run dev okay it will run the project
+
+
+
+// book img booktitle and aithor genre 
